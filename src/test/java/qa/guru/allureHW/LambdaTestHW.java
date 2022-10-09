@@ -33,7 +33,7 @@ public class LambdaTestHW {
         });
 
         step("Check Issues Tab", () -> {
-            $("#issues-tab").should(Condition.exist);
+            $(".UnderlineNav-body").shouldHave(Condition.text("Issues"));
         });
     }
 }
